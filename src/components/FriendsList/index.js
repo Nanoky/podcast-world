@@ -1,0 +1,62 @@
+import { Container, ListGroup, ListGroupItem, Row } from "react-bootstrap"
+
+import { FriendListItem } from "../FriendsListItem";
+import avatar from "../../assets/images/default-avatar.png"
+
+
+export const FriendList = () => {
+
+    const friends = [
+        {
+            avatar : avatar,
+            name : "username",
+            isOnline : false,
+            lastTime : "10 min"
+        },
+        {
+            avatar : avatar,
+            name : "username",
+            isOnline : true,
+            lastTime : "10 min"
+        },
+        {
+            avatar : avatar,
+            name : "username",
+            isOnline : false,
+            lastTime : "10 min"
+        },
+        {
+            avatar : avatar,
+            name : "username",
+            isOnline : false,
+            lastTime : "10 min"
+        },
+        {
+            avatar : avatar,
+            name : "username",
+            isOnline : false,
+            lastTime : "10 min"
+        },
+    ]
+
+    return (
+        <Container>
+            <Row>
+                <span>FRIENDS</span>
+            </Row>
+            <Row>
+                <ListGroup variant="flush">
+                    {
+                        friends.map((friend) => {
+                            return (
+                                <ListGroupItem>
+                                    <FriendListItem item={friend} />
+                                </ListGroupItem>
+                            )
+                        })
+                    }
+                </ListGroup>
+            </Row>
+        </Container>
+    );
+}

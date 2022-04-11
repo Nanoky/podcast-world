@@ -1,0 +1,9 @@
+.search-item {
+    border: none;
+}
+
+.search-item:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
