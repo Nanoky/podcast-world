@@ -1,4 +1,4 @@
-import { Container, ListGroup, ListGroupItem, Row } from "react-bootstrap";
+import { Container, ListGroup, ListGroupItem, Row, Stack } from "react-bootstrap";
 import avatar from "../../assets/images/group-avatar.png";
 import { GroupListItem } from "../GroupsListItem";
 
@@ -25,17 +25,15 @@ export const GroupList = () => {
                 <span>YOUR GROUP</span>
             </Row>
             <Row>
-                <ListGroup variant="flush">
+                <Stack gap={3}>
                     {
                         groups.map((group) => {
                             return (
-                                <ListGroupItem>
-                                    <GroupListItem item={group} />
-                                </ListGroupItem>
+                                <GroupListItem item={group} />
                             )
                         })
                     }
-                </ListGroup>
+                </Stack>
             </Row>
         </Container>
     );

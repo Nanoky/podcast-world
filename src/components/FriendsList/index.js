@@ -1,4 +1,4 @@
-import { Container, ListGroup, ListGroupItem, Row } from "react-bootstrap"
+import { Container, ListGroup, ListGroupItem, Row, Stack } from "react-bootstrap"
 
 import { FriendListItem } from "../FriendsListItem";
 import avatar from "../../assets/images/default-avatar.png"
@@ -45,17 +45,15 @@ export const FriendList = () => {
                 <span>FRIENDS</span>
             </Row>
             <Row>
-                <ListGroup variant="flush">
+                <Stack gap={2}>
                     {
                         friends.map((friend) => {
                             return (
-                                <ListGroupItem>
-                                    <FriendListItem item={friend} />
-                                </ListGroupItem>
+                                <FriendListItem item={friend} />
                             )
                         })
                     }
-                </ListGroup>
+                </Stack>
             </Row>
         </Container>
     );

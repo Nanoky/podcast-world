@@ -1,0 +1,13 @@
+.speaker-name {
+    font-size: small;
+    font-weight: bold;
+}
+
+.speaker-job {
+    font-size: x-small;
+    font-weight: 300;
+}
+
+.speaker-job-name {
+    font-weight: 500;
+}

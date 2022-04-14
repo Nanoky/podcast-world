@@ -1,0 +1,38 @@
+.card {
+    z-index: 99;
+    border: 0ch;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.date-pane {
+    background-color: rgb(0, 244, 247);
+    border-radius: 20%;
+    padding: 0%;
+}
+
+.date-stack {
+    margin: 10px 5px;
+}
+
+.date-month {
+    color: rgb(1, 106, 179);
+    text-transform: uppercase;
+}
+
+.date-day {
+    color: rgb(2, 47, 150);
+}
+
+.date-place {
+    font-size: small;
+    color: rgb(168, 168, 168);
+}
+
+.podcast-image {
+    border-radius: 5%;
+}
+
+.podcast-description {
+    font-size: smaller;
+    color: rgb(171, 171, 171);
+}

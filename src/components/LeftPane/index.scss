@@ -1,0 +1,13 @@
+$background_color : rgb(239, 239, 239);
+
+.name {
+    font-size: small;
+}
+
+.pane {
+    background-color: $background_color;
+}
+
+.list-group-item {
+    background-color: $background_color;
+}
